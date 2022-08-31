@@ -1,9 +1,33 @@
 import React from 'react'
+import styles, {layout} from '../styles'
+import { Button } from '../UI'
+import cardImg from '../assets/card.png'
 
-function CardDeal() {
-  return (
-    <div>CardDeal</div>
-  )
-}
+const CardDeal = () => 
+   (
+    <section className={layout.section}>
+        <div className={layout.sectionInfo}>
+          <h2 className={`${styles.heading2}`}>
+            Find a better card deal in few easy steps.
+            <br className='sm:block hidden' />
+
+          </h2>
+          <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+            Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+          </p>
+
+          <Button styles='mt-10'  text={'Get Started'}/>
+        </div>
+
+
+
+         <div className={layout.sectionImg}>
+          <img src={cardImg} alt='Paypal' 
+          className='w-[100%] h-[100%] object-contain
+            relative z-[5]
+          '/>
+        </div>
+    </section>
+   )
 
 export default CardDeal
