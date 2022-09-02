@@ -4,7 +4,7 @@ import styles from '../styles'
 import {logo} from '../assets'
 
 const Footer = () => (
-    <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
+    <section className={`${styles.flexCenter} pt-10 pb-2 flex-col`}>
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
 
           <div className={`${styles.flexStart} md-flex-row flex-col mb-8`}>
@@ -64,7 +64,7 @@ const Footer = () => (
             </p>
 
 
-          <div className={`flex flex-row mt-6 ${styles.flexCenter}`}>
+          <div className={`flex flex-row mt-6 mb-5 ${styles.flexCenter}`}>
                   {socialMedia.map((social,index) => (
                     <img 
                     key={`socialKey__${social.id}`}

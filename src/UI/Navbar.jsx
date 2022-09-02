@@ -47,6 +47,9 @@ function Navbar() {
               cursor-pointer
               text-[16px]
               text-white
+              hover:text-[18px]
+
+              transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
               `}
               >
 
@@ -112,7 +115,7 @@ function Navbar() {
               `}
               >
 
-                <a href={`#${nav.id}`} >
+                <a href={`#${nav.id}`}  >
                   {nav.title}
                 </a>
 
